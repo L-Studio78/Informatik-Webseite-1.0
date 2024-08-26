@@ -490,3 +490,11 @@ Zurück Button
   justify-content: center;
   animation: 3s rgb-text infinite; 
 }
+.text5{
+  margin-top: 20px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
