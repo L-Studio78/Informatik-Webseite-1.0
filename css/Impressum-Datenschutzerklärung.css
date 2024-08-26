@@ -1,0 +1,39 @@
+
+h1, h2 {
+    color: #76ff03; /* Helles Grün */
+}
+h3{
+    color: #0666f5;
+}
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+a {
+    color: #64b5f6; /* Helles Blau */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    background-color: #1f1f1f;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #76ff03; /* Grüner Rand */
+}
+.Datenschutzerklärung{
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.boxindatenschutzerklärung{
+ justify-content: center;
+ align-items: center;   
+}

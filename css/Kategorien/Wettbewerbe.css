@@ -1,0 +1,132 @@
+/**
+Einbinden der Schriftartt Jaro
+*/
+@font-face {
+  font-family: 'Jaro';
+  src: url(../../Schriftarten/Jaro-Regular-VariableFont_opsz.ttf);
+}
+@font-face {
+  font-family: 'Tiny';
+  src: url(../Schriftarten/Tiny5-Regular.ttf);
+}
+/**
+Wettbewerb boxen
+*/
+.Wettbewerbe-Box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin: 79px;
+}
+.Wettbewerbe{
+  height: 300px;
+  width: 400px;
+  margin-left: 20px;
+  margin-right: 0;
+  margin-top: 40px;
+  border-radius: 40px;
+  background-color:rgba(0, 0, 0, 0.943);
+  color: white;
+  border: solid #fff 4px;
+  cursor: pointer;
+}
+.Wettbewerbe:hover{
+  transform: translateY(-20px);
+  box-shadow:  5px 5px rgb(116, 110, 110);
+}
+.Wettbewerbe img {
+  width: 392px;
+  height: 100px;
+  border-radius: 35px 35px 0 0;
+  object-fit: cover;
+}
+  .Wettbewerbe h1{
+    font-size: 20px;
+    font-weight: 8000;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-90px);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 8px rgb(0, 195, 255),
+    0px 0px 12px rgb(58, 240, 3),
+    0px 0px 16px rgb(3, 240, 74);
+  }
+  .Wettbewerbe-text{
+    width: 100px;
+    height: 200px;
+    padding-left: 10px;
+  }
+  .Wettbewerbe a{
+    color: #3586ff;
+  }
+  .Wettbewerbe a:hover{
+    text-decoration: none;
+    animation: 3s rgb-text infinite; 
+  }
+  .Wettbewerbe-div{
+    position: absolute;
+    margin-left: 30px;
+    text-align: center;
+    justify-content: center;
+  }
+  .Überschrift-Wettbewerbe{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: 800;
+    margin-top: 30px;
+    font-family: 'Jaro';
+  }
+  /**
+  TEXTE
+  */
+  .TEXTE{
+    background-color: #40ec28;
+    width: 100%;
+    min-height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .TEXTE section{
+    background-color: #b2b9b9a2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 6px #e9e6e6 solid;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 85px;
+    margin-right: 85px;
+  }
+  .TEXTE-Überschrift{
+    font-size: 35px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(116, 110, 110);
+    font-family: 'Tiny';
+  }
+  .TEXTE-TEXT{
+    text-align: justify;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(116, 110, 110);
+  }
+  .TEXTE-TEXT a{
+    text-decoration: none;
+    font-weight: 900;
+    color: #031cff;
+  }
+  .TEXTE-TEXT a:hover{
+    text-decoration: underline;
+  }
+  .TEXTE-Bild{
+    object-fit: cover;
+    border-radius: 0 10px 0 10px; 
+  }
+  .TEXTE-Bild:hover{
+    transform: translateY(-10px);
+    border: solid #fff 3px;
+    scale: 1;
+  }

@@ -1,0 +1,77 @@
+/**
+Tabelle
+*/
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, 0.2);
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #009879;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+a{
+    color: #1700ee;
+    font-weight: 700;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+/**
+Unter datein
+*/
+.Box-text-IT{
+    margin-top: 40px;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+    border-radius: 20px;
+    background-image: url(../../Bilder/SlideBackgrounds/colorful-2174045_1920.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 0;
+}
+.Box-text-IT div{
+    font-weight: 600;
+}
+.Box-text-IT h2{
+    font-weight: 900;
+}
+.zitat{
+    font-size: 10px;
+    color: #3b3434;
+}

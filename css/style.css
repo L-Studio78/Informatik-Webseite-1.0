@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body{
+  overflow-x: hidden  ;
+  background-color: #7525e2;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+/**
+Animationen:
+*/
+@keyframes slider {
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: 0;
+  }
+}
+@keyframes rgb-text{
+  0%{
+    color: rgb(256, 0, 0);
+    text-shadow: 0px 0px 8px rgb(240, 3, 3),
+                 0px 0px 12px rgb(240, 3, 34),
+                 0px 0px 16px rgb(240, 98, 3);
+  }
+  50%{
+    color: rgb(0, 256, 0);
+    text-shadow: 0px 0px 8px rgb(0, 255, 13),
+                 0px 0px 12px rgb(3, 240, 74),
+                 0px 0px 16px rgb(3, 240, 74);
+  }
+  75%{
+    color: rgb(0, 0, 256);
+    text-shadow: 0px 0px 8px rgb(29, 4, 255),
+                 0px 0px 12px rgb(3, 38, 240),
+                 0px 0px 16px rgb(3, 173, 240);             
+  }
+  100%{
+    color: rgb(256, 0, 0);
+    text-shadow: 0px 0px 8px rgb(240, 3, 3),
+                 0px 0px 12px rgb(240, 3, 34),
+                 0px 0px 16px rgb(240, 98, 3);             
+  }
+}
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+/**
+Start Animation
+*/
+
+
+@keyframes Introanimation{
+
+  0%{
+    transform: translate(0);
+    visibility: visible;
+  }
+  to{
+    transform: translatey(-100%);
+  }
+
+}
+
+.intro{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 100000;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #0f1216;
+  animation: Introanimation ease-in-out 4s;
+  visibility: hidden;
+    
+}
+.intro p{
+  color: white;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 900;
+}
+.under-titel-intro{
+  font-size: 15px;
+  color: white;
+}
+
+/**
+Logo
+*/
+.Logo{
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  right: 20px;
+  top: 10px;
+}
+/**
+footer
+*/
+footer{
+  position: absolute;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../Bilder/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 100;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 6s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 99;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 6s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 100;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 5s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 99;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 5s linear infinite;
+}
+
+
+.footer h2{
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: -2%;
+}
+.waves{
+  background-color: transparent;
+}
+.footer-img{
+  height: 40px;
+  width: 40px;
+}
+/**
+Haeder
+*/
+.haeder{
+  width: 100%;
+  z-index: 6000;
+  background-color: rgb(8, 4, 22);
+  color: white;
+  padding: 10px 10px;
+
+}
+.haedline{
+  font-size: 70px;
+  margin-left: 79px;
+}
+.haedline h2{
+  font-size: 30px;
+}
+.haeder .text{
+  margin: 20px;
+  margin-left: 79px;
+  margin-right: 79px;
+  text-align: justify;
+  font-weight: 800;
+  max-width: 2000px;
+}
+/**
+Weiterarbeten Bug transition
+*/
+.transition-haeder-black{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-color: #7525e2;
+  z-index: 5;
+  border-radius: 60%;
+  transform: translateX(-950px);
+  transform: translatey(-85px);
+}
+.transition-haeder-black{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-color: #7525e2;
+  z-index: 5;
+  border-radius: 60%;
+  transform: translateX(-950px);
+  transform: translatey(-85px);
+}
+/**
+Bild Slider
+*/
+.Slider-Box{
+  float: none;
+  height: 480px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 79px;
+  margin-right: 79px;
+  border-radius:10px;
+  padding: 40px;
+  padding-top: 0px;
+  background-image: url(../Bilder/SlideBackgrounds/slidebackground.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 0;
+  box-shadow: 0 0 0 0 #ffffff;
+}
+.Slider-Box H1{
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+#slider{
+  overflow: hidden;
+  margin-top: 40px;
+  margin-top: 60px;
+}
+#slider figure{
+  position: relative;
+  width: 5000px;
+  left: 0;
+  animation: 20s slider infinite; 
+}
+.slideimg{
+  float: left;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.slideimg-box{
+  width: 225px;
+  height: 275px;
+  float: left;
+  margin-left: 50px;
+  margin-bottom: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background: hsla(0, 0%, 100%, 0.594); 
+}
+/**
+Auswahl Boxen
+*/
+.Box-Box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin: 79px;
+}
+.Box{
+  height: 300px;
+  width: 200px;
+  margin-left: 20px;
+  margin-right: 0;
+  margin-top: 40px;
+  border-radius: 40px;
+  background-color:rgba(62, 58, 58, 0.943);
+  border: solid #fff 4px;
+  cursor: pointer;
+  transition: scale 0.25s ease-in,
+              opacity 0.25s ease-in,
+              filter 0.25s ease-in;
+  &:hover{
+    scale: 1.05;
+  }
+}
+.Box img {
+  width: 192px;
+  height: 100px;
+  border-radius: 35px 35px 0 0;
+  object-fit: cover;
+}
+.Box h1{
+  font-size: 20px;
+  font-weight: 8000;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-90px);
+  color: rgb(0, 255, 242);
+  text-shadow: 0px 0px 8px rgb(0, 195, 255),
+  0px 0px 12px rgb(58, 240, 3),
+  0px 0px 16px rgb(3, 240, 74);
+}
+.Box-text{
+  width: 100px;
+  height: 200px;
+  padding-left: 10px;
+}
+/*
+Wenn ein Element aus Box-Box gehovert wird dann soll mit allen Elementen die nicht gehovert werden das passieren. 
+**/
+.Box-Box:has(.Box:hover) .Box:not(:hover){
+  scale: 0.9;
+  opacity: 0.9;
+  filter: blur(2px);
+}
+.Box a{
+  color: #3586ff;
+}
+.Box a:hover{
+  text-decoration: none;
+  animation: 3s rgb-text infinite; 
+}
+.Box-div{
+  position: absolute;
+  margin-left: 30px;
+  text-align: center;
+  justify-content: center;
+}
+/********************************************//**
+ *  Kategorein Standart CSS
+ ***********************************************/
+
+
+/**
+Zurück Button
+*/
+.Zurück-Button{
+  position: fixed;
+  left: 10px;
+  bottom: 30px;
+  height: 50px;
+  width: 70px;
+  background-color: #35ff61;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  z-index: 20000000000000000000000000000000000000000000;
+}
+.Zurück-Button a{
+  height: 20px;
+  width: 60px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+}
+.Zurück-Button a:hover{
+  height: 25px;
+  width: 65px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: 3s rgb-text infinite; 
+}

@@ -1,0 +1,338 @@
+.Geräte{
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.Box-Ausstattung{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(182, 134, 134, 0.1);
+    color: #fff;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+.liste {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.list-item {
+    flex: 1 1 calc(33.333% - 20px);
+    list-style: none;
+    background-color: #299aad;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.list-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.list-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.list-item h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.list-item p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+.list-item img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+/**
+Übergänge
+*/
+.Geräte-Übergang{
+    height: 60px;
+    margin-top: 70px;
+    background: linear-gradient(#7525e2, greenyellow );
+}
+.Geräte-Übergang2{
+    height: 60px;
+    background: linear-gradient(greenyellow, #7525e2 );
+}
+.LagePlan-Übergang{
+    height: 60px;
+    background: linear-gradient(#080416,#7525e2);
+}
+/**
+Kooperationen
+*/
+.description-firma{
+    visibility: hidden;
+    padding: 5px;
+    height: 300px;
+    width: 393px;
+    border: 5px solid #ffffff;
+    background-image: linear-gradient(rgb(255, 36, 255), #0dc1ee);
+    z-index: 9;
+    position: absolute;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(250px);
+    transition: all 1s;
+    border-radius: 25px 0px;
+}
+.slideimg:hover + .description-firma{
+    visibility: visible;
+    opacity: 1;
+    filter: blur();
+
+  }
+/**
+Karte
+*/
+.LagePlan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.LagePlan img{
+    border-radius: 10px;
+}
+.Hover-Boxen img{
+    height: 70%;
+    width: 70%;
+}
+.img-box{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 200px;
+    width: 293px;
+    border: 5px solid #000000;
+    background-image: url(../../Bilder/SlideBackgrounds/slidebackground.webp);
+    z-index: 9;
+    position: absolute;
+    filter: blur(5px);
+    transition: all 1s;
+    border-radius: 25px 0px;
+}
+@media (max-width: 768px) {
+    .list-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .list-item {
+        flex: 1 1 100%;
+    }
+}
+/**
+############## Räume ##############
+*/
+
+/**
+Chemie 1
+*/
+.Chemie1{
+    height: 40px;
+    width: 30px;
+    position: absolute;
+    transform: translate(-1250%,-250%);
+    border: 1px #c3c3c3 solid;
+}
+.Chemie1-img{
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-100%,-10%);
+}
+.Chemie1:hover{
+    border: 2px #d6d6d6 solid;
+    filter: blur(1);
+}
+.Chemie1:hover + .Chemie1-img{
+    visibility: visible;
+    opacity: 1;
+    filter: blur(0);
+}
+/**
+Chemie 2
+*/
+.Chemie2{
+    height: 40px;
+    width: 30px;
+    position: absolute;
+    transform: translate(-1250%,-350%);
+    border: 1px #c3c3c3 solid;
+}
+.Chemie2-img{
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-100%,-40%);
+}
+.Chemie2:hover{
+    border: 2px #d6d6d6 solid;
+    filter: blur(1);
+}
+.Chemie2:hover + .Chemie2-img{
+    visibility: visible;
+    opacity: 1;
+    filter: blur(0);
+}
+/**
+Physik 1
+*/
+.Physik1{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    transform: translate(-1250%,30%);
+    border: 1px #c3c3c3 solid;
+}
+.Physik1-img{
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-250%,50%);
+}
+.Physik1:hover{
+    border: 2px #d6d6d6 solid;
+    filter: blur(1);
+}
+.Physik1:hover + .Physik1-img{
+    visibility: visible;
+    opacity: 1;
+    filter: blur(0);
+}
+/**
+Physik 2
+*/
+.Physik2{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    transform: translate(-1250%,-60%);
+    border: 1px #c3c3c3 solid;
+}
+.Physik2-img{
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-250%,50%);
+}
+.Physik2:hover{
+    border: 2px #d6d6d6 solid;
+    filter: blur(1);
+}
+.Physik2:hover + .Physik2-img{
+    visibility: visible;
+    opacity: 1;
+    filter: blur(0);
+}
+/**
+Bio 1
+*/
+.Bio1{
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    transform: translate(-1250%,100%);
+    border: 1px #c3c3c3 solid;
+}
+.Bio1-img{
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-250%,-50%);
+}
+.Bio1:hover{
+    border: 2px #d6d6d6 solid;
+    filter: blur(1);
+}
+.Bio1:hover + .Bio1-img{
+    visibility: visible;
+    opacity: 1;
+    filter: blur(0);
+}
+
+/**
+Bio2
+*/
+.Bio2{
+    height: 40px;
+    width: 30px;
+    position: absolute;
+    transform: translate(-1150%,-250%);
+    border: 1px #c3c3c3 solid;
+}
+.Bio2-img{
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-250%,-40%);
+}
+.Bio2:hover{
+    border: 2px #d6d6d6 solid;
+    filter: blur(1);
+}
+.Bio2:hover + .Bio2-img{
+    visibility: visible;
+    opacity: 1;
+    filter: blur(0);
+}
+/**
+Informatik1
+*/
+.Informatik1{
+    height: 50px;
+    width: 20px;
+    position: absolute;
+    transform: translate(-1000%,-175%);
+    border: 1px #c3c3c3 solid;
+}
+.Informatik1-img{
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%,-40%);
+}
+.Informatik1:hover{
+    border: 2px #d6d6d6 solid;
+    filter: blur(1);
+}
+.Informatik1:hover + .Informatik1-img{
+    visibility: visible;
+    opacity: 1;
+    filter: blur(0);
+}
+/**
+Informatik2
+*/
+.Informatik2{
+    height: 25px;
+    width: 40px;
+    position: absolute;
+    transform: translate(-675%,-240%);
+    border: 1px #c3c3c3 solid;
+}
+.Informatik2-img{
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%,-40%);
+}
+.Informatik2:hover{
+    border: 2px #d6d6d6 solid;
+    filter: blur(1);
+}
+.Informatik2:hover + .Informatik2-img{
+    visibility: visible;
+    opacity: 1;
+    filter: blur(0);
+}
