@@ -82,7 +82,7 @@ Kooperationen
     width: 393px;
     border: 5px solid #ffffff;
     background-image: linear-gradient(rgb(255, 36, 255), #0dc1ee);
-    z-index: 9;
+    z-index: 999;
     position: absolute;
     opacity: 0;
     filter: blur(5px);
